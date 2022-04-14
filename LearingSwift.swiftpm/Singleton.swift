@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+/*
 struct LoggedInUser { }
 
 /* Singleton */
@@ -47,3 +47,4 @@ class MockAPIClient: GlobalApiClient {
 }
 
 GlobalApiClient.instance = MockAPIClient()
+*/
