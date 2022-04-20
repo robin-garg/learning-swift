@@ -6,24 +6,7 @@
 //
 
 import XCTest
-
-class RemoteFeedLoader {
-    let url: URL
-    let client: HTTPClient
-    
-    init(url: URL, client: HTTPClient) {
-        self.url = url
-        self.client = client
-    }
-    
-    func load() {
-        client.get(from: url)
-    }
-}
-
-protocol HTTPClient {
-    func get(from url: URL)
-}
+import EssentialFeed
 
 class RemoteFeedLoaderTests: XCTestCase {
     // we are starting from very simple test. Where we are asseting that we didn't make a URL request on RemoteFeedLoader initalisation. That should only be called when we hit the load function
